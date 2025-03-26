@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body>
+  <style>
+  /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#FF0080,#836FFF,#15F5BA);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:#AF47D2(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+.section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Profile Section */
+.profile-section {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 80%;
+    border: 4px solid #3498db;
+    animation: float 2s ease-in-out infinite;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #ccc;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+    background:#15F5BA(255, 255, 255, 0.05);
+}
+
+/* Education Section */
+.education-section {
+    background:#FF2DF1(255, 255, 255, 0.1);
+}
+
+/* Skills Section */
+.skills-section {
+    background: #FF2DF1(255, 255, 255, 0.05);
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #FF2DF1(255, 255, 255, 0.1);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+    background: rgba(52, 152, 219, 0.5);
+}
+
+/* Projects Section */
+.projects-section {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+/* Resume Section */
+.resume-section {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.resume-button {
+    background: #3498db;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-button:hover {
+    background:#E53888;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+  
+  
+  </style>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#profile" class="nav-link">Profile</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section profile-section">
+        <div class="profile">
+            <img src="https://i.ibb.co/j941bgV6/thariq.jpg"  alt="Porfirio's Profile Picture" class="profile-img">
+        </div>
+        <h1 class="name">mohamed thariq</h1>
+        <marquee direction=left>
+        <p class="title">web Developer and UI/UX Designer</p>
+           </marquee>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <marquee direction=up>
+        <h2>About Me</h2>
+        <p>website and webapp ,UI/UX Design create and logo,banner,animation effect power full best website create and pulisht</p>
+        </marquee>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <h2>Education</h2>
+        <div class="school">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p class="date">j groups arts and science collage, 2023 - 2026</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <ul>
+             <marquee direction=left>
+            <li>html</li>
+                  </marquee>
+             <marquee direction=right>
+            <li>css</li>
+                  </marquee>
+                  <marquee direction=left>
+            <li>javascript</li>
+                       </marquee>
+             <marquee direction=right>
+            <li>UI/UX Designer</li>
+                  </marquee>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>E-Commerce Website</h3>
+             <marquee direction=down>
+            <p>Built a full-stack e-commerce platform using html,css and javascript</p>
+                 </marquee>
+             </div>
+        <div class="project">
+            <h3>webapp</h3>
+             <marquee direction=up>
+            <p>animation and powerfull webapp</p>
+                  </marquee>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <a href="https://i.ibb.co/ZpgrwSb2/resume.png"  class="resume-button">download resume</a>
+         </section>
+</body>
+</html>
